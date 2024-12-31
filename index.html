@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاتحاد العام للطلاب الموريتانيين قسم المدرسة الوطنية العليا لعلوم الصحة</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>الاتحاد العام للطلاب الموريتانيين قسم المدرسة الوطنية العليا لعلوم الصحة</h1>
+    </header>
+
+    <main>
+        <h2>نموذج تسجيل العضو</h2>
+        <form id="registrationForm">
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="profilePicture">صورة شخصية:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+            <label for="phoneNumber">رقم الهاتف:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">الجنس:</label>
+            <select id="gender" name="gender" required>
+                <option value="ذكر">ذكر</option>
+                <option value="أنثى">أنثى</option>
+            </select>
+
+            <label for="yearOfStudy">السنة الدراسية:</label>
+            <select id="yearOfStudy" name="yearOfStudy" required>
+                <option value="L1">L1</option>
+                <option value="L2">L2</option>
+                <option value="L3">L3</option>
+            </select>
+
+            <label for="specialty">التخصص:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="TC">TC</option>
+                <option value="SI">SI</option>
+                <option value="SM">SM</option>
+                <option value="A&R">A&R</option>
+                <option value="Kiné">Kiné</option>
+                <option value="IM">IM</option>
+            </select>
+
+            <label for="studyLanguage">لغة الدراسة:</label>
+            <select id="studyLanguage" name="studyLanguage" required>
+                <option value="العربية">العربية</option>
+                <option value="ثنائية اللغة">ثنائية اللغة</option>
+            </select>
+
+            <label for="membershipCard">صورة من بطاقة العضوية:</label>
+            <input type="file" id="membershipCard" name="membershipCard" accept="image/*" required>
+
+            <label>
+                <input type="checkbox" id="loyalty" name="loyalty" required>
+                أقر على إخلاصي التام للاتحاد العام للطلاب الموريتانيين واستعدادي الكامل لخدمته في أي شيء يُطلب مني.
+            </label>
+
+            <button type="submit">تسجيل</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 الاتحاد العام للطلاب الموريتانيين</p>
+    </footer>
+</body>
+</html>
